@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ZeroTrace - Cyber Trust Certification
+
+![ZeroTrace Concept](docs/hero-screenshot.png) <!-- Note: Add an actual screenshot to docs folder later -->
+
+## Overview
+**ZeroTrace** is an affordable, continuous cybersecurity trust certification built specifically for growing tech SMEs. This repository holds the modern, one-page landing site that communicates our core message, highlights features with bento grid UI principles, outlines business benefits, and provides a clear contact form to book demos.
+
+## Tech Stack
+Built for extreme performance, security, and a premium "cyber" aesthetics:
+- **Framework:** [Next.js 14](https://nextjs.org) (React / App Router)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com) 
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Guidelines Checked:** Vercel Web Interface Guidelines
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+Make sure you have Node.js 18+ installed. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Local Development
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/bristo-biju/ZeroTrace.git
+   cd ZeroTrace
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+## Architecture
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This Next.js application isolates concerns via smaller components within `src/components`:
+- `Hero.tsx`: The animated landing entryway and core value proposition.
+- `ProblemSolution.tsx`: Highlights the friction of establishing cybersecurity trust and our clear solution.
+- `Features.tsx`: An engaging, animated bento-grid detailing product features.
+- `Benefits.tsx`: Easy-to-read business value checklists.
+- `Contact.tsx`: Built with accessibility in mind, serving as the lead generation form.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+Copyright © All rights reserved.
